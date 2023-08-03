@@ -21,7 +21,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"></script>
-  
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <style>
 
       .bd-placeholder-img {
@@ -39,14 +40,11 @@
         }
       }
   
-      /* GLOBAL STYLES
-      --------------------------------------------- */
-      /* Padding below the footer and lighter body text */
   
       body {
-        padding-top: 3rem;
+        background-color: #ebfff6;
         padding-bottom: 3rem;
-        color: #5a5a5a;
+        color: #988989;
       }
   
   
@@ -66,15 +64,15 @@
   
       /* Declare heights because of positioning of img element */
       .carousel-item {
-        height: 32rem;
+        height: 45rem;
       }
   
       .carousel-item>img {
-        position: absolute;
+        position: flex;
         top: 0;
         left: 0;
         min-width: 100%;
-        height: 32rem;
+        height: 45rem;
       }
   
   
@@ -92,8 +90,8 @@
       }
   
       .marketing .col-lg-4 p {
-        margin-right: .75rem;
-        margin-left: .75rem;
+        margin-right: .50rem;
+        margin-left: .50rem;
       }
   
   
@@ -135,24 +133,25 @@
           margin-top: 7rem;
         }
       }
+
+      .dualcards{
+        margin-left: 4%;
+        margin-right: 4%;
+      }
     </style>
   
   
-    <!-- Custom styles for this template -->
+
     <link href="carousel.css" rel="stylesheet">
 
   </head>
-
-
-
-
 
 
   <body>
     <header>
       <nav class="navbar navbar-expand-sm navbar-light "   style="background-color: #e3f2fd;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">ADSO 2669897</a>
+          <a class="navbar-brand" href="#">ADSO 2669897 Car's store</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
                     aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -176,7 +175,7 @@
                 <form class="d-flex" role="search"  class="col-5 ">
                 </div>
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  <button class="btn btn-primary" type="submit">Buscar</button>
                 </form>
           </div>
         </div>
@@ -185,7 +184,7 @@
 
 
 
-
+ <!-- inicio del Carrusel-->
 
   <section>
     <main>
@@ -198,51 +197,43 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                <rect width="100%" height="100%" fill="#777" /></svg>
+              <img class="bd-placeholder-img" src="ford-mustang-4k-2020-hu.jpg" alt="" width="100%" height="100%">
+
     
               <div class="container">
                 <div class="carousel-caption text-left">
-                  <h1>Example headline.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                    metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                  <h1>Car store.</h1>
+                  <p>Los mejores vehiculos para ti.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Comprar</a></p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                <rect width="100%" height="100%" fill="#777" /></svg>
+              <img class="bd-placeholder-img" src="motocross.jpg" alt="" width="100%" height="100%">
     
               <div class="container">
                 <div class="carousel-caption">
-                  <h1>Another example headline.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                    metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                  <h1>Visitanos...</h1>
+                  <p>y prueba nuestros vehiculos tu mismo...</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Ir</a></p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                <rect width="100%" height="100%" fill="#777" /></svg>
+              <img class="bd-placeholder-img" src="gmc-sierra-at4x-crew-cab-aev-edition-2023-5k-3840x2160-8363.jpg" alt="" width="100%" height="100%">
     
               <div class="container">
                 <div class="carousel-caption text-right">
-                  <h1>One more for good measure.</h1>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                    metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                  <h1>Descuentos siempre...</h1>
+                  <p>Tenemos descuetos todos los dias del año</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Las mejores promociones</a></p>
                 </div>
               </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only">Anterior</span>
           </a>
           <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -250,60 +241,131 @@
           </a>
         </div>
     
-    
-        <!-- Marketing messaging and featurettes
-      ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
+    <!-- aca inician las cards--> 
+
+
+    <div class="row" id="dualcards" style="margin-left: 2%; margin-right: 2%;">
+        
+      <div class="col-sm-6 mb-3 mb-sm-0" style="align-items: center;" >
+
+        <div class="card text-center"  >
+          <img src="139183-hombre_en_rojo_y_negro_casco_de_motocicleta_montando_en_bicicleta_deportiva_roja_en_la_carretera_durante_el_dia-3840x2160.jpg" class="card-img-top" alt="..." height="526px">
+           <div class="card-body">
+             <h5 class="card-title">Motos</h5>
+              <p class="card-text">¡Tenemos una gran selección de motos nuevas y usadas para elegir! <br> <br><br>
+                Desde motos deportivas hasta cruceros, tenemos algo para todos. Visítanos hoy mismo y deja que uno de nuestros expertos te ayude a encontrar la moto perfecta para ti."
+              <br><br></p>
+             <a href="#" class="btn btn-primary">Ver motos</a>
+          </div>
+        </div>
+   </div>
+
+
+  <div class="col-sm-6 mb-3 mb-sm-0" style="align-items: center;">
+
+        <div class="card text-center">
+          <img src="20211227-DODGE-CHALLENGER-MOPAR-PORTADA.jpg" class="card-img-top" alt="..." height="526px">  
+            <div class="card-body">
+              <h5 class="card-title">Carros</h5>
+               <p class="card-text">¿Buscas un nuevo carro? 
+                <br>¡Has venido al lugar correcto! <br><br>Tenemos una amplia selección de carros nuevos y usados para elegir, así que seguro que encontrarás el perfecto para ti. Ofrecemos una variedad de marcas y modelos, así como una variedad de precios para que todos puedan encontrar el carro que se ajuste a su presupuesto.</p>
+              <a href="#" class="btn btn-primary">Ver autos</a>
+            </div>
+        </div>
+  </div>
+</div>
+
+     <!--primeras dos cards termina aca-->
     
         <div class="container marketing">
-    
-          <!-- Three columns of text below the carousel -->
-          <div class="row">
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-                aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-              </svg>
-    
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-                vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-                magna.</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-                aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-              </svg>
-    
-              <h2>Heading</h2>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-                mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh.</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-                aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-              </svg>
-    
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-                felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                massa justo sit amet risus.</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-          </div><!-- /.row -->
-    
-    
-          <!-- START THE FEATURETTES -->
-    
-          <hr class="featurette-divider">
+
+          <hr>
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <div class="card" >
+                  <img src="gmc-sierra-at4x-crew-cab-aev-edition-2023-5k-3840x2160-8363.jpg" class="card-img-top" alt="..." height="250px">
+                  <div class="card-body">
+                    <h5 class="card-title">Camionetas</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" >
+                  <img src="mejores-sedanes-deportivos-7.jpg" class="card-img-top" alt="..." height="250px">
+                  <div class="card-body">
+                    <h5 class="card-title">Sedanes</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" >
+                  <img src="D_NQ_NP_875102-MCO70304266972_072023-O.jpg" class="card-img-top" alt="..." height="250px">
+                  <div class="card-body">
+                    <h5 class="card-title">Ruteros</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<br>
+
+            <div class="row">
+
+              <div class="col">
+                <div class="card" >
+                  <img src="motosenduro.jpg" class="card-img-top" alt="..." height="250px">
+                  <div class="card-body">
+                    <h5 class="card-title">Enduro</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" >
+                  <img src="motosracer.jpg" class="card-img-top" alt="..." height="250px">
+                  <div class="card-body">
+                    <h5 class="card-title">Racer</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card" >
+                  <img src="ktmmoto.jpg" class="card-img-top" alt="..." height="250px">
+                  <div class="card-body">
+                    <h5 class="card-title">Sport</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <hr>      
+<br>
+<br>
+
+
+<!-- START THE FEATURETTES -->
+
+
+        <!--  <hr class="featurette-divider">
     
           <div class="row featurette">
             <div class="col-md-7">
@@ -364,19 +426,83 @@
             </div>
           </div>
     
-          <hr class="featurette-divider">
+          <hr class="featurette-divider"> -->
     
 
     
+        </div>  <!--aca termina el marketing div-->
+        <div class="row" style="margin-left: 2%; margin-right: 2%;">
+          <div class="col-5 text-center" style="background-color: rgba(0, 0, 0, 0.436); padding:20px; border-radius: 10px; ">
+            <label for="exampleFormControlInput1" class="form-label" style="color: #e3f2fd; font-size: 25px;  text-align: center;">Registrate</label>
+            <input class="form-control form-control" type="text" placeholder="Correo" aria-label=".form-control-lg example">
+            <br>
+            <input class="form-control" type="text" placeholder="Nombre de usuario" aria-label="default input example">
+            <br>
+            <input class="form-control form-control" type="text" placeholder="Contraseña" aria-label=".form-control-sm example">
+            <br>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+
+
+        
+
+        <div class="col">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Accordion Item #3
+                </button>
+
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    
-    
+      </div>
+    <br>
+    <br>
 
 
       </main>
     
-
-
+<br>
+<br>
+<br>
+<hr>
+<br>
       <footer class="container">
         <p class="float-right"><a href="#">Volver al principio</a></p>
         <p>&copy; Made by Andres Cantillo 2669897 </p>
